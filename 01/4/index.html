@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function kamat(){
-            var ossz=parseInt(document.urlap.ossz.value);
+        function kamatSzamol(){
+            var osszeg=parseInt(document.urlap.ossz.value);
             var kamat=parseInt(document.urlap.k.value);
             var honap=parseInt(document.urlap.ho.value);
-            var eredmeny=parseFloat(ossz*Math.pow(1+kamat/100,honap/12));
+            var eredmeny=parseFloat(osszeg*Math.pow(1+kamat/100,honap/12));
             alert("Eredmény:"+eredmeny);
         }
     </script>
@@ -22,7 +22,7 @@
         <input type="text" name="k">
         <h2>Hány hónapra köti le:</h2><br>
         <input type="text" name="ho"><br>
-        <input type="submit" value="Click ME PLS" onclick="kamat()">
+        <input type="submit" value="Click ME PLS" onclick="kamatSzamol()">
     </form>
 </body>
 </html>

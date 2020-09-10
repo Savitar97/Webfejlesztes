@@ -6,7 +6,7 @@
     <title>Document</title>
     <script>
         function fizetestEmel(){
-            var fizetes=parseInt(document.form1.fizu.value);
+            var fizetes=parseInt(document.form1.fizetes.value);
             if(fizetes<=100000)
             {
                 fizetes+=fizetes*0.25;
@@ -18,7 +18,7 @@
 <body>
     <form name=form1>
         <h2>Add meg a fizud:</h2>
-        <input type="text" name="fizu">
+        <input type="text" name="fizetes">
         <br>
         <input type="submit" value="Click on MEEE!" onclick="fizetestEmel()">
     </form>
