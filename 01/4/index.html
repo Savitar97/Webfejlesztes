@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function kamat(){
+            var ossz=parseInt(document.urlap.ossz.value);
+            var kamat=parseInt(document.urlap.k.value);
+            var honap=parseInt(document.urlap.ho.value);
+            var eredmeny=parseFloat(ossz*Math.pow(1+kamat/100,honap/12));
+            alert("Eredmény:"+eredmeny);
+        }
+    </script>
+</head>
+<body>
+    <form name="urlap">
+        <h2>Összeg(Ft):</h2><br>
+        <input type="text" name="ossz">
+        <h2>Kamat(%):</h2><br>
+        <input type="text" name="k">
+        <h2>Hány hónapra köti le:</h2><br>
+        <input type="text" name="ho"><br>
+        <input type="submit" value="Click ME PLS" onclick="kamat()">
+    </form>
+</body>
+</html>

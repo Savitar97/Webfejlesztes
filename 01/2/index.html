@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function osszead(x,y){
+            var osszeg=parseInt(x)+parseInt(y);
+            alert("Eredmény:"+osszeg);
+        }
+    </script>
+</head>
+<body>
+    <form name="urlap">
+        <h2>Első szám:</h2>
+        <input type="text" name="szam1">
+        <br>
+        <h2>Második szám:</h2>
+        <input type="text" name="szam2">
+        <br>
+        <input type="submit" value="Click" onclick="osszead(document.urlap.szam1.value,document.urlap.szam2.value)">
+    </form>
+</body>
+</html>

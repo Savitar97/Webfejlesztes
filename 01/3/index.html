@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Terfogat(s,m){
+            var eredmeny=parseFloat(s)*parseFloat(s)*Math.PI*parseFloat(m);
+            alert("Henger terfogat:"+eredmeny);
+
+        }
+    </script>
+</head>
+<body>
+    <form name="form1">
+    <h2>Sugár:</h2>
+    <input type="text" name="sugar">
+    <h2>Magasság:</h2>
+    <input type="text" name="magassag">
+    <br>
+    <input type="submit" value="Calculate" onclick="Terfogat(document.form1.sugar.value,document.form1.magassag.value)">
+    </form>
+</body>
+</html>

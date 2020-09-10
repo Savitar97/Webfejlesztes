@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fizetestEmel(){
+            var fizetes=parseInt(document.form1.fizu.value);
+            if(fizetes<=100000)
+            {
+                fizetes+=fizetes*0.25;
+            }
+            alert("AZ új fizud boy:"+Math.round(fizetes));
+        }
+    </script>
+</head>
+<body>
+    <form name=form1>
+        <h2>Add meg a fizud:</h2>
+        <input type="text" name="fizu">
+        <br>
+        <input type="submit" value="Click on MEEE!" onclick="fizetestEmel()">
+    </form>
+</body>
+</html>
